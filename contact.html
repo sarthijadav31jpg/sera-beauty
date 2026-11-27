@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SERA BEAUTY - Contact Us</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+
+   
+</head>
+
+<body>
+
+    <section class="contact-section">
+        <a href="../index.html" class="back-home">← Back to Home</a>
+        <div class="contact-heading">
+            <h1>Contact Us</h1>
+            <p>We would love to hear from you! 💙</p>
+        </div>
+
+        <div class="contact-container">
+
+            <div class="contact-info">
+                <h2>Get In Touch ✨</h2>
+
+                <div class="contact-item">
+                    <h3>📧 Email</h3>
+                    <p>serabeauty@example.com</p>
+                </div>
+
+                <div class="contact-item">
+                    <h3>📞 Phone</h3>
+                    <p>+91 XXXXX XXXXX</p>
+                </div>
+
+                <div class="contact-item">
+                    <h3>📍 Location</h3>
+                    <p>Anand, Gujarat, India</p>
+                </div>
+
+                <div class="contact-item">
+                    <h3>📷 Instagram</h3>
+                    <p>@sera.beauty</p>
+                </div>
+
+                <p style="margin-top:25px; color:#789BBF;">
+                    Beauty begins with you. Thank you for choosing SERA BEAUTY! 🩵
+                </p>
+            </div>
+
+            <div class="contact-form">
+                <h2>Send Us a Message 💌</h2>
+
+                <form onsubmit="sendMessage(event)">
+
+                    <input type="text" placeholder="Your Name" required>
+
+                    <input type="email" placeholder="Your Email" required>
+
+                    <input type="text" placeholder="Subject" required>
+
+                    <textarea placeholder="Write your message here..." required></textarea>
+
+                    <button type="submit">Send Message ✨</button>
+
+                </form>
+            </div>
+
+        </div>
+
+    </section>
+
+    <script>
+       function sendMessage(event) {
+    event.preventDefault();
+
+    let name = document.querySelector('input[placeholder="Your Name"]').value;
+    let email = document.querySelector('input[placeholder="Your Email"]').value;
+    let subject = document.querySelector('input[placeholder="Subject"]').value;
+    let message = document.querySelector('textarea').value;
+
+    let number = "919510137201";
+
+    let text = "Hello SERA BEAUTY! 💙\n\n" +
+               "Name: " + name + "\n" +
+               "Email: " + email + "\n" +
+               "Subject: " + subject + "\n" +
+               "Message: " + message;
+
+    let whatsappURL = "https://wa.me/" + number +
+                      "?text=" + encodeURIComponent(text);
+
+    window.location.href = whatsappURL;}
+    </script>
+
+</body>
+</html>

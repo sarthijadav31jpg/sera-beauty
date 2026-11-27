@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Makeup - SERA BEAUTY</title>
+
+    <link rel="stylesheet" href="../CSS/style.css">
+
+    <style>
+        /* ===== MAKEUP COLLECTION PAGE ===== */
+
+        .makeup-categories {
+            padding: 50px 20px !important;
+        }
+
+        .makeup-categories .cards {
+            display: flex;
+            justify-content: center;
+            align-items: stretch;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        /* PREMIUM CARDS */
+        .makeup-categories .card {
+            width: 280px !important;
+            min-height: 380px !important;
+            padding: 22px !important;
+            margin: 0 !important;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+
+            background: rgba(255, 255, 255, 0.85) !important;
+            border: 1px solid #D5E7F5 !important;
+            border-radius: 22px !important;
+
+            box-shadow: 0 8px 25px rgba(82, 125, 165, 0.12) !important;
+
+            transition: all 0.35s ease !important;
+        }
+
+        /* CARD HOVER */
+        .makeup-categories .card:hover {
+            transform: translateY(-10px) !important;
+            background: #F8FCFF !important;
+            border-color: #A7C9E8 !important;
+
+            box-shadow:
+                0 15px 35px rgba(82, 125, 165, 0.22),
+                0 0 18px rgba(167, 201, 232, 0.20) !important;
+        }
+
+        /* IMAGES */
+        .makeup-categories .card img {
+            width: 100% !important;
+            height: 220px !important;
+            object-fit: contain !important;
+            border-radius: 15px !important;
+            transition: transform 0.35s ease !important;
+        }
+
+        .makeup-categories .card:hover img {
+            transform: scale(1.04);
+        }
+
+        /* HEADING */
+        .makeup-categories .card h2 {
+            color: #527DA5 !important;
+            margin: 12px 0 !important;
+        }
+
+        /* EXPLORE */
+        .makeup-categories .card a {
+            display: inline-block;
+            margin-top: 10px !important;
+            padding: 10px 24px !important;
+
+            color: white !important;
+            background: linear-gradient(135deg, #789BBF, #527DA5) !important;
+
+            border-radius: 25px !important;
+            text-decoration: none !important;
+
+            box-shadow: 0 4px 12px rgba(82, 125, 165, 0.18);
+            transition: all 0.3s ease !important;
+        }
+
+        .makeup-categories .card a:hover {
+            background: #365B7D !important;
+            transform: translateY(-3px);
+            box-shadow: 0 7px 18px rgba(82, 125, 165, 0.28);
+        }
+
+        /* MOBILE */
+        @media (max-width: 600px) {
+            .makeup-categories .card {
+                width: 100% !important;
+                max-width: 320px;
+            }
+        }
+        /* ===== MAKEUP SOFT BLUE BACKGROUND ===== */
+
+.makeup-categories {
+    background: linear-gradient(
+        135deg,
+        #EAF4FF 0%,
+        #F8FCFF 50%,
+        #DCEEFF 100%
+    ) !important;
+
+    border-radius: 25px;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Soft glow */
+.makeup-categories::before {
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: -100px;
+    right: -80px;
+
+    background: radial-gradient(
+        circle,
+        rgba(167, 201, 232, 0.35),
+        transparent 70%
+    );
+
+    pointer-events: none;
+}
+
+/* Keep cards above glow */
+.makeup-categories .cards {
+    position: relative;
+    z-index: 1;
+}
+/* ===== PREMIUM CARD SHINE ===== */
+
+.makeup-categories .card {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Light reflection */
+.makeup-categories .card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -120%;
+
+    width: 60%;
+    height: 100%;
+
+    background: linear-gradient(
+        120deg,
+        transparent,
+        rgba(255, 255, 255, 0.65),
+        transparent
+    );
+
+    transform: skewX(-25deg);
+    transition: left 0.7s ease;
+    pointer-events: none;
+}
+
+.makeup-categories .card:hover::before {
+    left: 150%;
+}
+    </style>
+
+</head>
+
+<body>
+
+    <div class="page-title">
+        <h1>Makeup Collection</h1>
+        <p>Find your perfect makeup essentials.</p>
+    </div>
+
+    <section class="categories makeup-categories">
+
+        <div class="cards">
+
+            <!-- LIPSTICK -->
+            <div class="card">
+                <img src="../image/lipstic.jpg" width="200">
+                <h2>Lipstick</h2>
+                <a href="Pages/lipstick.html">Explore</a>
+            </div>
+
+            <!-- FOUNDATION -->
+            <div class="card">
+                <img src="../image/foundation.jpg" width="200">
+                <h2>Foundation</h2>
+                <a href="../Pages/foundation.html">Explore</a>
+            </div>
+
+            <!-- EYE MAKEUP -->
+            <div class="card">
+                <img src="../image/eyemakeup.jpg" width="200">
+                <h2>Eye Makeup</h2>
+                <a href="Pages/eyemakeup.html">Explore</a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <center>
+        <a href="index.html" class="btn">Back home</a>
+    </center>
+
+</body>
+</html>

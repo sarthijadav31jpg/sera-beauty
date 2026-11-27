@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SERA BEAUTY - Eye Makeup</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+
+<body>
+
+    <h1>Eye Makeup Collection</h1>
+
+    <a href="../makeup.html" class="back-home">
+    ← Back to Makeup Collection
+</a>
+    <p>🛒 My Cart: <span id="cart-count">0</span></p>
+
+    <div class="products">
+
+        <div class="card">
+            <img src="../image/eyemakeup1.jpg">
+            <h2>Kajal</h2>
+            <p>₹199</p>
+            <button onclick="addToCart('Kajal', 199)">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="../image/eyemakeup2.jpg">
+            <h2>Mascara</h2>
+            <p>₹299</p>
+            <button onclick="addToCart('Mascara', 299)">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="../image/eyemakeup3.jpg">
+            <h2>Eyeshadow Palette</h2>
+            <p>₹499</p>
+            <button onclick="addToCart('Eyeshadow Palette', 499)">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="../image/eyemakeup4.jpg">
+            <h2>Eyeliner</h2>
+            <p>₹249</p>
+            <button onclick="addToCart('Eyeliner', 249)">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="../image/eyemakeup5.jpg">
+            <h2>Eyebrow Pencil</h2>
+            <p>₹149</p>
+            <button onclick="addToCart('Eyebrow Pencil', 149)">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="../image/eyemakeup6.jpg">
+            <h2>False Eyelashes</h2>
+            <p>₹299</p>
+            <button onclick="addToCart('False Eyelashes', 299)">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="../image/eyemakeup7.jpg">
+            <h2>Contact Lenses</h2>
+            <p>₹599</p>
+            <button onclick="addToCart('Contact Lenses', 599)">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="../image/eyemakeup8.jpg">
+            <h2>Glitter Eyeshadow</h2>
+            <p>₹349</p>
+            <button onclick="addToCart('Glitter Eyeshadow', 349)">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="../image/eyemakeup9.jpg">
+            <h2>Eye Makeup Remover</h2>
+            <p>₹299</p>
+            <button onclick="addToCart('Eye Makeup Remover', 299)">Add to Cart</button>
+        </div>
+
+    </div>
+
+    <script>
+
+        let cartCount = 0;
+
+        function addToCart(product, price) {
+
+            cartCount++;
+
+            document.getElementById("cart-count").innerText = cartCount;
+
+            alert(product + " added to cart!\nPrice: ₹" + price);
+        }
+
+    </script>
+
+</body>
+</html>

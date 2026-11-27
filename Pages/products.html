@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SERA BEAUTY - Beauty Essentials</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+
+</head>
+<body>
+
+    <p>🛒 My Cart: <span id="cart-count">0</span></p>
+    <h1>SERA BEAUTY - Beauty Essentials</h1>
+    
+<a href="../index.html" class="back-home">← Back to Home</a>
+
+<div class="products">
+
+    <div class="card">
+        <img src="../image/makeuppouch.jpg">
+        <h3>Makeup Pouch</h3>
+        <p>₹299</p>
+        <button onclick="addToCart('Makeup-Pouch')">Add to Cart</button>
+    </div>
+    <div class="card">
+    <img src="../image/makeupblender.jpg">
+    <h3>Beauty Blender</h3>
+    <p>₹199</p>
+    <button onclick="addToCart('Beauty Blender')">Add to Cart</button>
+</div>
+
+<div class="card">
+    <img src="../image/makeupmirror.jpg">
+    <h3>LED Makeup Mirror</h3>
+    <p>₹599</p>
+    <button onclick="addToCart('LED Makeup Mirror')">Add to Cart</button>
+
+</div>
+
+<div class="card">
+    <img src="../image/hairaccessories.jpg">
+    <h3>Hair Accessories</h3>
+    <p>₹199</p>
+    <button onclick="addToCart('Hair Accessories')">Add to Cart</button>
+
+</div>
+
+<div class="card">
+    <img src="../image/headband.jpg">
+    <h3>Skincare Headband Set</h3>
+    <p>₹149</p>
+    <button onclick="addToCart('Skincare Headband Set')">Add to Cart</button>
+
+</div>
+
+<div class="card">
+    <img src="../image/organizer.jpg">
+    <h3>Makeup Organizer</h3>
+    <p>₹499</p>
+    <button onclick="addToCart('Makeup Organizer')">Add to Cart</button>
+
+
+</div>
+
+<div class="card">
+    <img src="../image/scrunchies.jpg">
+    <h3>Satin Scrunchies</h3>
+    <p>₹149</p>
+    <button onclick="addToCart('Satin Scrunchies')">Add to Cart</button>
+
+</div>
+
+<div class="card">
+    <img src="../image/travelbottles.jpg">
+    <h3>Travel Bottles</h3>
+    <p>₹199</p>
+    <button onclick="addToCart('Travel Bottles')">Add to Cart</button>
+
+</div>
+
+<div class="card">
+    <img src="../image/makeupbrush.jpg">
+    <h3>Makeup Brush Set</h3>
+    <p>₹399</p>
+    <button onclick="addToCart('Makeup Brush Set')">Add to Cart</button>
+</div>
+
+</div>
+<script>
+let cartCount = 0;
+
+function addToCart(productName) {
+    cartCount++;
+
+    alert(productName + " added to your cart successfully! 💗");
+
+    document.getElementById("cart-count").innerText = cartCount;
+}
+</script>
+</body>
+</html>

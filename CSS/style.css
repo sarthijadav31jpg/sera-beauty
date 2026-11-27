@@ -1,0 +1,973 @@
+
+/* SERA BEAUTY - Burgundy & Champagne Luxury Theme */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #FAF6F0;
+    color: #4A1725;
+    text-align: center;
+}
+
+/* HEADER */
+.header {
+    text-align: center;
+    padding: 22px;
+    background: #EFE3D5;
+}
+
+.header h1 {
+    color: #722F45;
+    letter-spacing: 5px;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 18px;
+    background: #FFFDF9;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #4A1725;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: #A77B50;
+}
+
+/* HOMEPAGE HERO */
+.hero {
+    min-height: 420px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    background: linear-gradient(120deg, #EFE3D5, #FAF6F0);
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 700px;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin: 15px 0;
+    color: #722F45;
+}
+
+.hero p {
+    margin-bottom: 20px;
+}
+
+/* BUTTONS */
+.btn,
+button,
+.back-home {
+    display: inline-block;
+    background: #722F45;
+    color: #FFFDF9;
+    padding: 12px 22px;
+    text-decoration: none;
+    border: 1px solid #C6A477;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btn:hover,
+button:hover,
+.back-home:hover {
+    background: #4A1725;
+    color: white;
+}
+
+/* HOMEPAGE CATEGORIES */
+.categories {
+    text-align: center;
+    padding: 55px 20px;
+}
+
+.categories h2 {
+    color: #722F45;
+    margin-bottom: 30px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* ALL CARDS */
+.card {
+    background: #FFFDF9;
+    width: 250px;
+    padding: 15px;
+    margin: 15px;
+    text-align: center;
+    border: 1px solid #E7D5C1;
+    border-radius: 14px;
+    box-shadow: 0 5px 18px rgba(107, 33, 55, 0.08);
+}
+
+.card h2,
+.card h3 {
+    color: #722F45;
+}
+
+.card a {
+    display: inline-block;
+    margin-top: 15px;
+    color: #8B4A5E;
+}
+
+.card a:hover {
+    color: #4A1725;
+}
+
+/* PRODUCT GRID */
+.products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 25px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.products .card {
+    width: auto;
+    margin: 0;
+    background: #FFFDF9;
+    padding: 15px;
+}
+
+.products .card img {
+    width: 100%;
+    height: 220px;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+/* PAGE TITLE */
+.page-title {
+    text-align: center;
+    padding: 70px 20px;
+    background: #EFE3D5;
+}
+
+.page-title h1 {
+    color: #722F45;
+    margin-bottom: 15px;
+}
+
+/* SINGLE PRODUCT */
+.product {
+    background: #FFFDF9;
+    width: 300px;
+    margin: 40px auto;
+    padding: 25px;
+    border: 1px solid #E7D5C1;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(107, 33, 55, 0.08);
+}
+
+.product img {
+    width: 200px;
+    border-radius: 10px;
+}
+
+.product h3 {
+    color: #722F45;
+}
+
+.product button {
+    margin: 5px;
+}
+
+/* SINGLE LIPSTICK PRODUCT */
+.single-product {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin: 30px auto;
+    max-width: 650px;
+}
+
+.single-product img {
+    width: 280px;
+    height: 300px;
+    object-fit: contain;
+}
+
+/* LIPSTICK SHADES */
+.shade-buttons button {
+    margin: 6px;
+    padding: 12px 22px;
+}
+
+/* PRODUCT DETAILS */
+#product-details {
+    background: #FFFDF9;
+    padding: 20px;
+    border: 1px solid #E7D5C1;
+    border-radius: 15px;
+    box-shadow: 0 3px 12px #00000010;
+}
+
+#product-details h3 {
+    color: #722F45;
+}
+
+#product-details button {
+    margin-top: 12px;
+}
+
+/* FOOTER */
+.footer {
+    text-align: center;
+    padding: 35px;
+    background: #EFE3D5;
+    color: #4A1725;
+    line-height: 2;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 600px) {
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .navbar {
+        gap: 12px;
+        flex-wrap: wrap;
+    }
+
+    .products {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .single-product {
+        flex-direction: column;
+    }
+}
+
+
+/* SERA BEAUTY - Powder Blue & Pearl White */
+
+body {
+    background: #EEF7FF !important;
+    color: #34495E !important;
+}
+
+.header,
+.footer {
+    background: #DCEEFF !important;
+}
+
+.header h1,
+h1, h2, h3 {
+    color: #527DA5 !important;
+}
+
+.navbar {
+    background: #FFFFFF !important;
+}
+
+.navbar a {
+    color: #34495E !important;
+}
+
+.navbar a:hover {
+    color: #789BBF !important;
+}
+
+.hero {
+    background: linear-gradient(135deg, #DCEEFF, #FFFFFF) !important;
+}
+
+.page-title {
+    background: #DCEEFF !important;
+}
+
+.card,
+.products .card,
+.product,
+#product-details {
+    background: #FFFFFF !important;
+    border: 1px solid #D5E7F5 !important;
+    box-shadow: 0 5px 18px #789BBF20 !important;
+}
+
+.card a {
+    color: #527DA5 !important;
+}
+
+button,
+.btn,
+.back-home,
+.shade-buttons button {
+    background: #789BBF !important;
+    color: #FFFFFF !important;
+    border: none !important;
+    border-radius: 10px !important;
+}
+
+button:hover,
+.btn:hover,
+.back-home:hover {
+    background: #527DA5 !important;
+}
+
+a {
+    color: #527DA5;
+}
+
+a:hover {
+    color: #34495E;
+}
+/* Dark Blue Buttons */
+
+button,
+.btn,
+.back-home,
+.shade-buttons button {
+    background-color: #527DA5 !important;
+    color: white !important;
+    border: none !important;
+    border-radius: 10px !important;
+}
+
+button:hover,
+.btn:hover,
+.back-home:hover,
+.shade-buttons button:hover {
+    background-color: #365B7D !important;
+    color: white !important;
+}
+
+/* SERA BEAUTY - Button Animation */
+
+button,
+.btn,
+.back-home,
+.shade-buttons button {
+    transition: all 0.3s ease !important;
+    cursor: pointer;
+}
+
+/* Mouse hover effect */
+button:hover,
+.btn:hover,
+.back-home:hover,
+.shade-buttons button:hover {
+    transform: translateY(-3px) scale(1.04);
+    box-shadow: 0 6px 15px rgba(65, 105, 145, 0.30);
+}
+
+/* Click effect */
+button:active,
+.btn:active,
+.back-home:active,
+.shade-buttons button:active {
+    transform: scale(0.96);
+}
+
+
+/* EXPLORE BUTTON SPECIAL EFFECT */
+
+.card a {
+    display: inline-block;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+/* Hover */
+.card a:hover {
+    transform: translateY(-4px);
+    letter-spacing: 1px;
+    box-shadow: 0 6px 15px rgba(82, 125, 165, 0.25);
+}
+
+/* Click */
+.card a:active {
+    transform: scale(0.95);
+}
+/* CONTACT PAGE */
+
+.contact-section {
+    padding: 50px 20px;
+    background: #EEF7FF;
+}
+
+.contact-heading {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.contact-heading h1 {
+    color: #527DA5;
+    font-size: 38px;
+    margin-bottom: 12px;
+}
+
+.contact-heading p {
+    color: #64788B;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.contact-info,
+.contact-form {
+    background: white;
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 5px 20px #789BBF20;
+    border: 1px solid #D5E7F5;
+    width: 450px;
+}
+
+.contact-info h2,
+.contact-form h2 {
+    color: #527DA5;
+    margin-bottom: 22px;
+}
+
+.contact-item {
+    margin: 22px 0;
+    color: #34495E;
+}
+
+.contact-item h3 {
+    color: #527DA5;
+    margin-bottom: 7px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 13px;
+    margin: 10px 0;
+    border: 1px solid #D5E7F5;
+    border-radius: 9px;
+    background: #F8FBFF;
+    font-family: Arial, sans-serif;
+    outline: none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #789BBF;
+    box-shadow: 0 0 6px #789BBF40;
+}
+
+.contact-form textarea {
+    height: 130px;
+    resize: vertical;
+}
+
+.contact-form button {
+    width: 100%;
+    margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+    .contact-info,
+    .contact-form {
+        width: 100%;
+    }
+
+    .contact-heading h1 {
+        font-size: 30px;
+    }
+}
+
+/* MAKEUP COLLECTION - EQUAL CARDS */
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.cards .card {
+    width: 280px;
+    min-height: 380px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.cards .card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.cards .card h3 {
+    margin: 15px 0;
+}
+
+.cards .card a {
+    margin-top: auto;
+    margin-bottom: 15px;
+}
+/* PREMIUM BEAUTY HERO */
+
+.hero {
+    position: relative;
+    overflow: hidden;
+    background: radial-gradient(circle at top left, #DCEEFF, #FFFFFF 65%);
+}
+
+/* Decorative sparkles */
+.hero::before {
+    content: "✧";
+    position: absolute;
+    top: 50px;
+    left: 12%;
+    color: #789BBF;
+    font-size: 55px;
+    opacity: 0.5;
+    animation: float 4s ease-in-out infinite;
+}
+
+.hero::after {
+    content: "✦";
+    position: absolute;
+    bottom: 50px;
+    right: 12%;
+    color: #A7C9E8;
+    font-size: 40px;
+    animation: float 5s ease-in-out infinite;
+}
+
+/* Floating effect */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+/* Premium Shop button */
+.hero a {
+    display: inline-block;
+    padding: 14px 32px;
+    border-radius: 30px;
+    background: #527DA5;
+    color: white;
+    text-decoration: none;
+    box-shadow: 0 5px 20px #789BBF40;
+    transition: 0.3s;
+}
+
+.hero a:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px #527DA550;
+    letter-spacing: 1px;
+}
+/* REMOVE GAP BETWEEN NAME AND EXPLORE */
+
+.cards .card {
+    justify-content: center !important;
+    gap: 8px !important;
+}
+
+.cards .card h3 {
+    margin: 0 !important;
+}
+
+.cards .card a {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+/* TIGHT HOMEPAGE CARDS */
+
+.cards .card {
+    height: auto !important;
+    min-height: unset !important;
+    padding: 15px 10px !important;
+    justify-content: center !important;
+    gap: 10px !important;
+}
+
+.cards .card h3 {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.cards .card a {
+    margin: 0 !important;
+    padding: 5px 10px !important;
+}
+/* BEAUTY SLIDESHOW */
+
+.beauty-slider {
+    width: 100%;
+    height: 350px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.beauty-slider .slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    filter: blur(12px);
+    transform: scale(1.05);
+    transition: opacity 1.5s ease, filter 1.5s ease,
+                transform 2s ease;
+}
+
+.beauty-slider .slide.active {
+    opacity: 1;
+    filter: blur(0);
+    transform: scale(1);
+}
+/* LIPSTICK PAGE SPACING FIX */
+
+body {
+    line-height: 1.6;
+}
+
+body h1 {
+    margin-top: 25px;
+    margin-bottom: 8px;
+}
+
+body h2 {
+    margin: 18px 0;
+}
+
+/* Back button */
+.back-home {
+    display: inline-block;
+    margin: 12px 0 18px;
+    padding: 12px 22px;
+}
+
+/* Cart spacing */
+#cart-count {
+    margin: 12px 0;
+}
+
+/* Colour buttons */
+.shade-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.shade-buttons button {
+    min-width: 85px;
+    padding: 12px 20px;
+}
+
+/* Collection heading */
+.shade-title {
+    margin: 25px 0 !important;
+}
+
+/* Carousel spacing */
+.carousel,
+.slider,
+.shade-carousel {
+    margin: 25px auto;
+    gap: 15px;
+}
+/* COMPACT LIPSTICK PAGE */
+
+body h1 {
+    margin-top: 10px !important;
+    margin-bottom: 3px !important;
+}
+
+body h2 {
+    margin: 8px 0 !important;
+}
+
+.back-home {
+    margin: 5px 0 8px !important;
+    padding: 9px 18px !important;
+}
+
+.shade-buttons {
+    gap: 8px !important;
+    margin: 10px 0 !important;
+}
+
+.shade-buttons button {
+    padding: 9px 17px !important;
+}
+
+.shade-title {
+    margin: 10px 0 !important;
+}
+
+.carousel,
+.slider,
+.shade-carousel {
+    margin: 10px auto !important;
+}
+/* LIPSTICK IMAGE DISPLAY FIX */
+
+.single-product {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin: 15px auto;
+    width: 100%;
+}
+
+#product-details {
+    width: 350px;
+    max-width: 90%;
+    text-align: center;
+    padding: 10px;
+}
+
+#product-details img {
+    width: 100%;
+    height: 280px;
+    object-fit: contain;
+    display: block;
+    margin: auto;
+}
+
+.single-product button {
+    flex-shrink: 0;
+}
+/* ===== SERA BEAUTY PREMIUM GLASS EFFECT ===== */
+
+/* HERO GLASS PANEL */
+.hero-content {
+    position: relative;
+    z-index: 2;
+    padding: 40px 30px;
+    background: rgba(255, 255, 255, 0.48);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    border-radius: 25px;
+    box-shadow: 0 8px 35px rgba(82, 125, 165, 0.12);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+
+/* COLLECTION GLASS CARDS */
+.categories .card {
+    background: rgba(255, 255, 255, 0.72) !important;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(120, 155, 191, 0.30) !important;
+    border-radius: 20px !important;
+    box-shadow:
+        0 8px 25px rgba(82, 125, 165, 0.10),
+        inset 0 1px 1px rgba(255, 255, 255, 0.90) !important;
+    transition: all 0.35s ease !important;
+}
+
+/* CARD HOVER */
+.categories .card:hover {
+    transform: translateY(-8px) !important;
+    border-color: #A7C9E8 !important;
+    box-shadow:
+        0 15px 35px rgba(82, 125, 165, 0.20),
+        0 0 15px rgba(167, 201, 232, 0.20) !important;
+}
+
+/* CARD TEXT */
+.categories .card h3 {
+    letter-spacing: 0.5px;
+}
+
+.categories .card a {
+    transition: all 0.3s ease !important;
+}
+
+.categories .card a:hover {
+    letter-spacing: 1px;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 600px) {
+    .hero-content {
+        padding: 25px 18px;
+        border-radius: 18px;
+    }
+}
+/* ===== SERA BEAUTY PREMIUM NAVBAR ===== */
+
+.navbar a {
+    position: relative;
+    text-decoration: none !important;
+    transition: color 0.3s ease, transform 0.3s ease !important;
+    padding: 10px 16px !important;
+}
+
+/* Smooth underline */
+.navbar a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 3px;
+    width: 0;
+    height: 2px;
+    background: #527DA5;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+/* Hover effect */
+.navbar a:hover {
+    color: #365B7D !important;
+    transform: translateY(-2px);
+}
+
+.navbar a:hover::after {
+    width: 70%;
+}
+
+/* Smooth navbar */
+.navbar {
+    gap: 10px !important;
+}
+/* ===== PREMIUM SHOP NOW BUTTON ===== */
+
+.hero .btn {
+    background: linear-gradient(135deg, #789BBF, #527DA5, #365B7D) !important;
+    color: white !important;
+    padding: 14px 35px !important;
+    border: none !important;
+    border-radius: 30px !important;
+    text-decoration: none !important;
+    box-shadow: 0 6px 20px rgba(82, 125, 165, 0.25) !important;
+    transition: all 0.35s ease !important;
+    display: inline-block;
+}
+
+/* Hover */
+.hero .btn:hover {
+    background: linear-gradient(135deg, #527DA5, #365B7D) !important;
+    transform: translateY(-4px) scale(1.03) !important;
+    box-shadow: 0 10px 25px rgba(82, 125, 165, 0.35) !important;
+}
+
+/* Click effect */
+.hero .btn:active {
+    transform: scale(0.97) !important;
+}
+/* ===== VISIBLE BLUE GLOW HERO ===== */
+
+.hero {
+    background:
+        radial-gradient(
+            ellipse at 50% 40%,
+            #FFFFFF 0%,
+            #E3F1FF 45%,
+            #C9E2F8 100%
+        ) !important;
+    position: relative;
+    overflow: hidden;
+}
+/* ===== PREMIUM COLLECTION HEADING ===== */
+
+.categories h2 {
+    text-align: center !important;
+    color: #527DA5 !important;
+    font-size: 32px !important;
+    letter-spacing: 1.5px !important;
+    margin-bottom: 35px !important;
+    position: relative;
+    padding-bottom: 18px;
+}
+
+/* Decorative blue line */
+.categories h2::after {
+    content: "";
+    display: block;
+    width: 75px;
+    height: 3px;
+    background: linear-gradient(
+        to right,
+        #C9E2F8,
+        #527DA5,
+        #C9E2F8
+    );
+    border-radius: 10px;
+    margin: 15px auto 0;
+}
+/* ===== MAKEUP PREMIUM CARD FIX ===== */
+
+.categories.makeup-categories .cards .card {
+    background: #FFFFFF !important;
+    border: 1px solid #D5E7F5 !important;
+    border-radius: 20px !important;
+    box-shadow: 0 8px 25px rgba(82, 125, 165, 0.15) !important;
+    padding: 20px !important;
+    transition: all 0.35s ease !important;
+}
+
+/* Card Hover */
+.categories.makeup-categories .cards .card:hover {
+    transform: translateY(-8px) !important;
+    background: #F8FCFF !important;
+    border: 1px solid #A7C9E8 !important;
+    box-shadow: 0 15px 35px rgba(82, 125, 165, 0.25) !important;
+}
+
+/* Card Heading */
+.categories.makeup-categories .cards .card h2 {
+    color: #527DA5 !important;
+}
+
+/* Explore Link */
+.categories.makeup-categories .cards .card a {
+    color: #527DA5 !important;
+    font-weight: bold;
+    text-decoration: none !important;
+}
+
+/* Card Image */
+.categories.makeup-categories .cards .card img {
+    border-radius: 12px !important;
+}
+.makeup-categories .card {
+    background: yellow !important;
+    border: 5px solid red !important;
+}

@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SERA BEAUTY - Lipstick</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+
+<body>
+
+    <h1>SERA BEAUTY</h1>
+    <h2>Matte Lipstick Collection</h2>
+
+   <a href="../makeup.html" class="back-home">
+    ← Back to Makeup Collection
+</a>
+
+    <p>🛒 My Cart: <span id="cart-count">0</span></p>
+
+    <h3>Select Your Colour</h3>
+
+    <div class="shade-buttons">
+        <button onclick="showCollection('Nude')">Nude</button>
+        <button onclick="showCollection('Pink')">Pink</button>
+        <button onclick="showCollection('Red')">Red</button>
+        <button onclick="showCollection('Brown')">Brown</button>
+    </div>
+
+    <h2 id="collection-title">Nude Collection</h2>
+
+    <div class="single-product">
+
+        <button onclick="previousShade()">❮</button>
+
+        <div id="product-details">
+    <p>Select a colour to explore lipsticks.</p>
+</div>
+
+        <button onclick="nextShade()">❯</button>
+
+    </div>
+
+    <script src="../JS/script.js" defer></script>
+
+</body>
+</html>

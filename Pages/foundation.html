@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SERA BEAUTY - Foundation</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+
+<body>
+
+    <h1>Foundation Collection</h1>
+
+    <a href="../makeup.html" class="back-home">
+        ← Back to Makeup Collection
+    </a>
+
+    <p>🛒 My Cart: <span id="cart-count">0</span></p>
+
+    <div class="products">
+
+        <div class="card">
+            <img src="../image/foundation1.jpg">
+            <h2>Maybelline Fit Me</h2>
+            <p>₹499</p>
+            <button onclick="chooseShade('Maybelline Fit Me', 499)">
+                Choose Shade & Add to Cart
+            </button>
+        </div>
+
+        <div class="card">
+            <img src="../image/foundation2.jpg">
+            <h2>Lakme Foundation</h2>
+            <p>₹550</p>
+            <button onclick="chooseShade('Lakme Foundation', 550)">
+                Choose Shade & Add to Cart
+            </button>
+        </div>
+
+        <div class="card">
+            <img src="../image/foundation3.jpg">
+            <h2>L'Oreal Paris</h2>
+            <p>₹799</p>
+            <button onclick="chooseShade('L’Oreal Paris', 799)">
+                Choose Shade & Add to Cart
+            </button>
+        </div>
+
+        <div class="card">
+            <img src="../image/foundation4.jpg">
+            <h2>Swiss Beauty</h2>
+            <p>₹399</p>
+            <button onclick="chooseShade('Swiss Beauty', 399)">
+                Choose Shade & Add to Cart
+            </button>
+        </div>
+
+        <div class="card">
+            <img src="../image/foundation5.jpg">
+            <h2>Kay Beauty</h2>
+            <p>₹899</p>
+            <button onclick="chooseShade('Kay Beauty', 899)">
+                Choose Shade & Add to Cart
+            </button>
+        </div>
+
+        <div class="card">
+            <img src="../image/foundation6.jpg">
+            <h2>Mamaearth</h2>
+            <p>₹499</p>
+            <button onclick="chooseShade('Mamaearth', 499)">
+                Choose Shade & Add to Cart
+            </button>
+        </div>
+
+        <div class="card">
+            <img src="../image/foundation7.jpg">
+            <h2>Maybelline Super Stay</h2>
+            <p>₹699</p>
+            <button onclick="chooseShade('Maybelline Super Stay', 699)">
+                Choose Shade & Add to Cart
+            </button>
+        </div>
+
+        <div class="card">
+            <img src="../image/foundation8.jpg">
+            <h2>Faces Canada</h2>
+            <p>₹599</p>
+            <button onclick="chooseShade('Faces Canada', 599)">
+                Choose Shade & Add to Cart
+            </button>
+        </div>
+
+    </div>
+
+    <script>
+
+        let cartCount = 0;
+
+        function chooseShade(brand, price) {
+
+            let shade = prompt(
+                "Choose your shade:\n1. Ivory\n2. Natural\n3. Beige\n4. Honey\n5. Warm Nude"
+            );
+
+            if (shade === null || shade === "") {
+                return;
+            }
+
+            cartCount++;
+
+            document.getElementById("cart-count").innerText = cartCount;
+
+            alert(
+                brand + " added to cart!\nShade: " + shade + "\nPrice: ₹" + price
+            );
+        }
+
+    </script>
+
+</body>
+</html>
